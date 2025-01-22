@@ -1,0 +1,10 @@
+numpy
+pandas
+yfinance
+scikit-learn
+matplotlib
+keras
+tensorflow
+streamlit
+pillow
+warnings
