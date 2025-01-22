@@ -39,7 +39,7 @@ st.markdown("<h1 style='text-align: center; margin-top: -20px;'>Cryptocurrency P
 # Sidebar inputs
 st.sidebar.header("Model Parameters")
 crypto_symbol = st.sidebar.text_input("Cryptocurrency Name", "BTC-USD")
-prediction_ahead = st.sidebar.number_input("Prediction Days Ahead", min_value=1, max_value=60, value=7, step=1)
+prediction_ahead = st.sidebar.number_input("Prediction Days Ahead", min_value=1, max_value=30, value=7, step=1)
 
 if st.sidebar.button("Predict"):
     # Step 1: Pull crypto data for the last 1 year
