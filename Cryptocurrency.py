@@ -106,7 +106,7 @@ if st.sidebar.button("Predict"):
 
     # Latest close price and last predicted price
     latest_close_price = float(btc_data['Close'].iloc[-1])
-    last_predicted_price = float(future_forecast[-1])
+    last_predicted_price = float(future_forecast[-1, 0])
 
     # Centered layout for metrics
     col1, col2, col3 = st.columns([1, 2, 1])
@@ -158,3 +158,4 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 # Streamlit run Cryptocurrency.py
+
